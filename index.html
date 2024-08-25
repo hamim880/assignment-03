@@ -3,9 +3,106 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Rinterio</title>
+    <!-- daisyUi cdn -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
+
+    <!-- tailwind cdn  -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <script>
+        tailwind.config = {
+          theme: {
+            extend: {
+              colors: {
+                clifford: '#b8e994',
+              }
+            }
+          }
+        }
+      </script>
+
+    <style>
+          .font-manrope{
+
+            font-family: "Manrope", sans-serif;
+        }
+
+    </style>
 </head>
-<body>
+<body class="font-manrope">
+
+    <!-- navbar section  -->
+     
+    <nav class="bg-white shadow-lg">
+        <div class="max-w-7xl mx-auto px-4">
+            <div class="flex justify-between">
+                <div class="flex space-x-4">
+                    <!-- Logo -->
+                    <div>
+                        <a href="#" class="flex items-center py-5 px-2 text-gray-700">
+                            <span class="text-green-500 text-xl font-bold">Rinterio</span>
+                        </a>
+                    </div>
+
+                    <!-- Primary Nav -->
+                    <div class="hidden md:flex items-center space-x-1">
+                        <a href="#" class="py-5 px-3 hover:text-gray-900 text-bold text-lg">Home</a>
+                        <a href="#" class="py-5 px-3 text-gray-700 hover:text-gray-900">Services</a>
+                        <a href="#" class="py-5 px-3 text-gray-700 hover:text-gray-900">Portfolio</a>
+                        <a href="#" class="py-5 px-3 text-gray-700 hover:text-gray-900">Blogs</a>
+                        <a href="#" class="py-5 px-3 text-gray-700 hover:text-gray-900">Contact Us</a>
+                    </div>
+                </div>
+
+                <!-- Secondary Nav -->
+                <div class="hidden md:flex items-center space-x-1">
+                    <a href="#" class="py-2 px-3 bg-green-500 text-white rounded-full hover:bg-green-400 transition duration-300">
+                        Book Consult <span class="ml-2 bg-black rounded-full">↗</span>
+                    </a>
+                </div>
+
+                <!-- Mobile Menu Button -->
+                <div class="md:hidden flex items-center">
+                    <button class="mobile-menu-button">
+                        <svg class="w-6 h-6" fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" stroke="currentColor">
+                            <path d="M4 6h16M4 12h16m-7 6h7"></path>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Mobile Menu -->
+        <div class="mobile-menu hidden md:hidden">
+            <a href="#" class="block py-2 px-4 text-sm hover:bg-gray-200">Home</a>
+            <a href="#" class="block py-2 px-4 text-sm hover:bg-gray-200">Services</a>
+            <a href="#" class="block py-2 px-4 text-sm hover:bg-gray-200">Portfolio</a>
+            <a href="#" class="block py-2 px-4 text-sm hover:bg-gray-200">Blogs</a>
+            <a href="#" class="block py-2 px-4 text-sm hover:bg-gray-200">Contact Us</a>
+            <a href="#" class="block py-2 px-4 text-sm bg-green-500 text-white rounded-full mt-2 hover:bg-green-400 transition duration-300">
+                Book Consult ↗</span>
+            </a>
+        </div>
+    </nav>
+
+
+  
+
+         
+                
+            
+        
+                
+  
+
+     
+
+
+
+
+ 
     
 </body>
+
 </html>

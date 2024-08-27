@@ -4,13 +4,19 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Rinterio</title>
+    <!---font awesome cdn --> 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+
     <!-- daisyUi cdn -->
     <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
 
     <!-- tailwind cdn  -->
     <script src="https://cdn.tailwindcss.com"></script>
 
+   
     <script>
+
         tailwind.config = {
           theme: {
             extend: {
@@ -21,12 +27,15 @@
           }
         }
       </script>
+    
+    
 
     <style>
           .font-manrope{
 
             font-family: "Manrope", sans-serif;
         }
+        
 
     </style>
 </head>
@@ -34,14 +43,15 @@
 
     <!-- navbar section  -->
      
-    <nav class="bg-white shadow-lg">
+    <nav class="bg-white shadow-lg mx-auto">
+        
         <div class="max-w-7xl mx-auto px-4">
             <div class="flex justify-between">
                 <div class="flex space-x-4">
                     <!-- Logo -->
                     <div>
                         <a href="#" class="flex items-center py-5 px-2 text-gray-700">
-                            <span class="text-green-500 text-xl font-bold">Rinterio</span>
+                            <span class="text-green-500 text-2xl font-bold">Rinterio</span>
                         </a>
                     </div>
 
@@ -52,13 +62,19 @@
                         <a href="#" class="py-5 px-3 text-gray-700 hover:text-gray-900">Portfolio</a>
                         <a href="#" class="py-5 px-3 text-gray-700 hover:text-gray-900">Blogs</a>
                         <a href="#" class="py-5 px-3 text-gray-700 hover:text-gray-900">Contact Us</a>
-                    </div>
-                </div>
-
-                <!-- Secondary Nav -->
+                        </div>
+                        <div>
+                            <ul class=" flex items-center gap-8 absolute h-14 w-14 top-2 text-center pl-32 ">
+                                <li class="hidden lg:block"><a ><i class=" fa-duotone fa-solid fa-magnifying-glass text-2xl bg-gray-300 rounded-full  text-xl flex items-center justify-center h-8 w-8 p-5 border-gray-600"></i></a></li>
+                                <li class="hidden lg:block"><a><i class="fa-duotone fa-solid fa-cart-shopping text-2xl bg-gray-300 rounded-full  text-xl flex items-center justify-center h-8 w-8 p-5"></i></a></li>
+                              
+                            </ul>
+                      </div>
+                    </div>   
+                 <!-- Secondary Nav -->
                 <div class="hidden md:flex items-center space-x-1">
-                    <a href="#" class="py-2 px-3 bg-green-500 text-white rounded-full hover:bg-green-400 transition duration-300">
-                        Book Consult <span class="ml-2 bg-black rounded-full">↗</span>
+                    <a href="#" class="py-2 px-3 bg-green-500 text-black rounded-full hover:bg-green-400 transition duration-300">
+                        Book Consult <span class="ml-2 bg-black text-white rounded-full "><i class="fa-solid fa-arrow-right -rotate-45"></i></span>
                     </a>
                 </div>
 
@@ -86,13 +102,11 @@
         </div>
     </nav>
 
+    <!-- main section -->
+<main>  
+<!-- A barn house banner section -->
 
-
-    <!-- A barn house banner section -->
-     
-
-
-    <div class="flex flex-col items-center justify-center min-h-screen p-6">
+    <div class="flex flex-col items-center justify-center min-h-screen p-6 mt-8">
         <!-- Image Section -->
         <div class="mb-6">
             <img src="image/banner.png" alt="House Design" class="w-full max-w-md rounded-lg shadow-md">
@@ -109,16 +123,18 @@
             </p>
 
             <!-- Button -->
-            <a href="#" class="inline-flex items-center px-5 py-3 bg-green-500 text-white text-lg rounded-full hover:bg-green-400 transition duration-300">
+            <a href="#" class="inline-flex items-center px-5 py-3 bg-green-500 text-black text-lg rounded-full hover:bg-green-400 transition duration-300">
                 View Details 
-                <span class="ml-2 bg-black rounded-full">↗</span>
+                <i class="fa-solid fa-arrow-right ml-2 text-black bg-gray-200 rounded-full -rotate-45"></i>
             </a>
         </div>
     </div>
 
     <!-- about us section  -->
-
-    
+   <div class="bg-gray-200 mt-8">
+    <div class="ml-10 pt-5">
+        <img src="image/Vector.png" alt="">
+    </div>
 
     <div class="container mx-auto p-6 md:flex md:space-x-6">
         <!-- Left Section -->
@@ -160,14 +176,26 @@
         </div>
 
         <!-- Right Section (Image) -->
-        <div class="md:w-1/2 mt-6 md:mt-0">
+        <div class="md:w-1/2 lg:w-2/5  mt-6 md:mt-0 ">
             <img src="image/Rectangle.png" alt="Building Design" class="w-full rounded-lg shadow-md">
         </div>
     </div>
+   
+    
 
-    <!-- our work process -->
 
-  
+     <!-- our work process -->
+     <div class="flex flex-col items-center py-12 bg-gray-100 bg-gray-200">
+        <button class="flex items-center px-4 py-2 mb-8 text-white bg-gray-800 rounded-full hover:bg-gray-700">
+          <span>→ How we works</span>
+        </button>
+        <h2 class="text-4xl font-bold mb-4">Our Works Process</h2>
+        <p class="text-center text-gray-600 max-w-xl">
+          The barn house captivates with its blend of rustic charm and modern sophistication, featuring weathered wood, sleek metal accents.
+        </p>
+      </div>
+
+
 
   <!-- Card Container -->
   <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 ">
@@ -210,33 +238,153 @@
 
   </div>
 
+   </div>
 
+   <!-- our Latest portfolio -->
 
+   <div class="flex flex-col items-center py-12 bg-white">
+    <button class="flex items-center px-6 py-3 mb-8 text-black text-bold bg-lime-100 text-lime-800 rounded-full hover:bg-lime-200">
+      <span>→ Explore our Latest works</span>
+    </button>
+    <h2 class="text-4xl font-bold mb-4">Our Latest Portfolio</h2>
+    <p class="text-center text-gray-600 max-w-2xl">
+      The barn house captivates with its blend of rustic charm and modern sophistication, featuring weathered wood, sleek metal accents.
+    </p>
 
-
-
-
-
-
-
-
-
-  
-
-         
-                
-            
-        
-                
-  
-
-     
-
-
-
-
- 
+  <!-- Card Container -->
+  <div class="container mx-auto flex flex-col md:flex-row items-center justify-between space-y-4 md:space-y-0 md:space-x-4 p-6 bg-white rounded-lg shadow-lg">
     
-</body>
+    <!-- Image 1 -->
+    <div class="w-full md:w-1/4">
+      <img src="image/img1.png" alt="Commercial Image" class="rounded-lg w-full">
+    </div>
+    
+    <!-- Content -->
+    <div class="flex flex-col items-start justify-center w-full md:w-1/2 space-y-2 text-center md:text-left">
+      <h2 class="font-bold text-2xl">Commercial</h2>
+      <p class="text-gray-600">The barn house captivates with its blend of rustic charm and modern. The barn house captivates with its blend of rustic charm and modern.</p>
+      <a href="#" class="text-lg font-semibold text-black hover:underline flex items-center">
+        View Details 
+        <i class="fa-solid fa-arrow-right bg-green-400 rounded-full -rotate-45"></i>
+      </a>
+    </div>
+    
+    <!-- Image 2 -->
+    <div class="w-full md:w-1/4">
+      <img src="image/img2.png" alt="Residential Image" class="rounded-lg w-full">
+    </div>
+</div>
 
+  <!-- Card Container -->
+  <div class="container mx-auto flex flex-col md:flex-row items-center justify-between space-y-4 md:space-y-0 md:space-x-4 p-6 bg-white rounded-lg shadow-lg">
+    
+    <!-- Image 1 -->
+    <div class="w-full md:w-1/3">
+      <img src="image/img3.png" alt="House Image 1" class="rounded-lg w-full">
+    </div>
+       <!-- Image 2  -->
+       <div class="w-full md:w-1/3">
+        <img src="image/img4.png" alt="House Image 1" class="rounded-lg w-full">
+      </div>
+    
+    <!-- Content -->
+    <div class="flex flex-col items-start justify-center w-full md:w-1/3 space-y-2 text-center md:text-left">
+      <h2 class="font-bold text-2xl">Commercial</h2>
+      <p class="text-gray-600">The barn house captivates with its blend of rustic charm and modern.</p>
+      <a href="#" class="text-lg font-semibold text-black hover:underline flex items-center">
+        View Details 
+        <i class="fa-solid fa-arrow-right ml-2 text-black bg-green-400 rounded-full -rotate-45"></i>
+      </a>
+    </div>
+    
+    <!-- Image 3 -->
+    <div class="w-full md:w-1/3">
+      <img src="image/img5.png" alt="House Image 2" class="rounded-lg w-full">
+    </div>
+
+  </div>
+
+  <!-- Let's discuss -->
+
+  <div class="bg-[url('./image/bg.jpg')] w-full">
+    
+
+  <div class="container mx-auto p-6">
+    <!-- Section Title -->
+    <div class="text-center mb-8">
+      <button class="btn btn-outline btn-success mb-4 bg-black">→ Let's Connect</button>
+      <h1 class="text-4xl font-bold">Let's Discuss Next Project</h1>
+      <p class="mt-4 text-gray-600">The barn house captivates with its blend of rustic charm and modern sophistication,<br> featuring weathered wood, sleek metal accents.</p>
+    </div>
+
+    <!-- Contact Form -->
+    <form class="bg-white p-8 rounded-lg shadow-lg max-w-3xl mx-auto">
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+        <!-- First Name -->
+        <div>
+
+          <input type="text" id="firstName" class="input input-bordered w-full" placeholder="First Name">
+        </div>
+        <!-- Last Name -->
+        <div>
+    
+          <input type="text" id="lastName" class="input input-bordered w-full" placeholder="Last Name">
+        </div>
+        <!-- Phone Number -->
+        <div>
+        <input type="text" id="phone" class="input input-bordered w-full" placeholder="Phone Number">
+        </div>
+        <!-- Email -->
+        <div>
+        <input type="email" id="email" class="input input-bordered w-full" placeholder="Email">
+        </div>
+      </div>
+      <!-- Message -->
+      <div class="mt-4">
+        <textarea id="message" class="textarea textarea-bordered w-full h-32" placeholder="Write your message here"></textarea>
+      </div>
+      <!-- Submit Button -->
+      <div class="mt-6 text-center">
+        <button class="btn btn-wide w-full bg-lime-400 text-black hover:bg-lime-500">
+          Send Mail <i class="fa-solid fa-arrow-right ml-2 bg-black text-white rounded-full -rotate-45"></i>
+        </button>
+      </div>
+    </form>
+  </div>
+</div>
+
+</main>
+
+
+
+
+  <!-- Footer -->
+ 
+  <footer class="p-8 bg-neutral text-neutral-content bg-black w-full mt-8">
+    <div class="flex flex-col md:flex-row items-center gap-2 w-full lg:justify-center">
+        <div class="   p-2  text-2xl font-bold">
+           <span class=" bg-green-400 text-black rounded-full">↗
+           </span> Rinterio
+        </div>
+        </div>
+    <div class="container mx-auto text-center md:text-left">
+      <div>
+       <p class="mt-2 mt-0 lg:text-center md:text-left md:ml-4 text-gray-400">
+          The barn house captivates with its blend of rustic charm and modern sophistication,<br>
+          featuring weathered wood, sleek metal accents.
+        </p>
+      </div>
+      <ul class="flex lg:justify-center md:justify-start space-x-6 mt-6">
+        <li><a href="#" class="hover:text-lime-500">Home</a></li>
+        <li><a href="#" class="hover:text-lime-500">Services</a></li>
+        <li><a href="#" class="hover:text-lime-500">Portfolio</a></li>
+        <li><a href="#" class="hover:text-lime-500">Blogs</a></li>
+        <li><a href="#" class="hover:text-lime-500">Contact Us</a></li>
+      </ul>
+      <div class="flex lg:justify-center md:justify-start mt-6">
+        <a href="#" class="btn btn-lime text-center bg-green-400"> Book Consult <i class="fa-solid fa-arrow-right bg-black rounded-full text-white -rotate-45"></i></a>
+      </div>
+    </div>
+  </footer>   
+</body>
 </html>
